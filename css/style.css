@@ -1,0 +1,214 @@
+body{
+	background: #ecf0f1; 
+	font-family:Arial;
+	color: #2c3e50;
+}
+
+h1{
+	font-size: 200%;
+	text-align: center;	
+}
+
+a, figcaption{
+	text-decoration: none;
+	font-size: smaller;
+	color: #999;
+}
+
+p a {
+	color: #07e;
+	font-size: 100%;
+}
+
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p{	
+	margin: 0;
+}
+
+#content p{
+	margin: 1em 1em 1em 2em;
+	line-height: 2;
+}
+article{
+	margin: 0 auto;
+    padding: 1em;
+    width: 75%;
+}
+
+header{
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
+
+nav{
+	width: 25%;
+	float: left;
+}
+
+div#content{
+	width: 75%;
+	float: right;
+	margin-bottom: 5em;
+}
+
+
+figure{
+	margin: 0;
+}
+
+ul.timeline {
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+	padding: 1em 0;
+	list-style-type: none;	
+}
+
+li.date{
+	width: 75%;
+	margin-left: 13.5%;
+	position: relative;
+}
+
+
+/* span that holds the text of the day of the week*/
+.datetime{
+	left: -3%;
+	position: absolute;
+	top: -3px;
+	text-align: left;
+	z-index: 10000;
+	font-weight: bolder;
+
+}
+
+/* circles*/
+ul.event li:before
+{
+	position: absolute; 
+	border:#e74c3c 4px solid;
+	display: block;
+	width: 10px; /* w/h of viewport may change - so use pixels not relative*/
+	height: 10px;
+	border-radius: 10px; 
+	left: -10.5px;
+	content: ' ';
+	background:#ecf0f1;
+	z-index: 1000;
+
+}
+
+ul.event li.active:before{
+	background: #e74c3c;
+}
+
+ul.event{
+	list-style-type: none;
+	padding: 0 1em 1em;
+	margin-left: 7%;
+	position: relative;
+	border-left: 4px solid #e74c3c;
+}
+
+ul.event li {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border-color: #eee #ddd #bbb;
+    text-align: center;
+}
+
+ul.event li.active,
+ul.event li:hover{
+	background: #e74c3c;
+	transition: all 0.3s ease 0s;
+}
+
+ul.event li.active a,
+ul.event li:hover a{
+	color: #ecf0f1;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+	width: 18.5%;
+}
+
+/* media queries */
+@media (max-width: 1000px) {
+	
+	ul.event{
+		width: 100%;
+		margin-left: 0;
+		padding-left: 5%;
+		padding-top: 10%;
+		
+	}
+	.datetime{
+		left: 5%;
+		top: 0;
+	}
+	
+	ul.event{
+		padding-top: 7%;
+		padding-left: 10%;
+
+	}
+	
+	ul.event:before{
+		top: 0;
+	}
+	
+	ul.event li{
+		margin-top: 0.5em;
+	}
+	
+	blockquote{
+		margin: 0;
+	}
+}
+
+
+@media (max-width: 400px) {
+	.datetime{
+		left: 10%;
+		top: 0;
+	}
+	
+	li.date{
+		margin-left: 5%;
+		width: 90%;
+	}
+	
+	ul.event li.tweet p{
+		margin-top: 0;
+		margin-bottom: 1em;
+		
+	}
+	
+	img{
+		width: 100%	
+	}
+	
+	p{
+		font-size: 80%;
+	}
+	
+	ul.event{
+		padding-left: 18%;
+	}
+	
+	
+
+}
+
