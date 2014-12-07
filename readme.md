@@ -1,5 +1,5 @@
 Demo
-* <a href="https://radiocontrolled.github.io/CSS3-timeline-scrollspy/index.html">https://radiocontrolled.github.io/CSS3-timeline-scrollspy/index.html</a>
+* <a href="http://radiocontrolled.github.io/css-timeline-scrollspy/index.html">https://radiocontrolled.github.io/CSS-timeline-scrollspy/index.html</a>
  
 Features
 * a pure CSS3 timeline
